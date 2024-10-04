@@ -1,12 +1,29 @@
 .calculator {
-  width: 100vw;
-  max-width: 300px;
-  margin: 50px auto;
-  border: 1px solid #ccc;
+  width: 90vw;
+  min-width: fit-content;
+  max-width: 500px;
+  height: fit-content;
+  border: 1px solid #555;
   border-radius: 10px;
-  overflow: hidden;
-  background-color: #fff;
+  margin: 50px auto;
+  background-color: #111;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
   padding-top: 0;
+  overflow: hidden;
+}
+
+@media (max-height: 900px) {
+  .calculator {
+    margin: 20px auto;
+  }
+}
+
+@media (min-height: 500px) {
+  .calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

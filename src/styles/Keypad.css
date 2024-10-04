@@ -6,23 +6,34 @@
 }
 
 .keypad .btn {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    height: 12vh;
+    min-height: 1cm;
+    max-height: 2cm;
+    min-width: 1cm;
+    border: 1px solid #555;
     border-radius: 5px;
     padding: 10px;
-    font-size: 20px;
+    color: white;
+    background-color: #222;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 0.5cm;
 }
 
 .keypad .btn:hover {
-    background-color: #e6e6e6;
+    background-color: #f07706;
 }
 
 .keypad .btn:active {
-    background-color: #d9d9d9;
+    background-color: #ac5403;
 }
 
 .keypad .hide {
     visibility: hidden;
+}
+
+@media (min-height: 900px) {
+    .keypad .btn {
+        font-size: 1cm;
+    }
 }

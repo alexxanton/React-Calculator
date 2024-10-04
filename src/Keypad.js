@@ -2,7 +2,6 @@ import React from 'react';
 import './styles/Keypad.css';
 
 function Keypad({ handleClick }) {
-  // Lista de botones de la calculadora
   const buttons = [
     'C', '/', '*', '-',
     '7', '8', '9', '+',
@@ -11,12 +10,12 @@ function Keypad({ handleClick }) {
     '', '0'
   ];
 
-  let btnClass = ""
+  let btnClass = "";
 
   return (
     <div className="keypad">
       {buttons.map((btn, index) => (
-        btn.length == 0 ? btnClass = "hide" : btnClass = "btn",
+        btn == "" ? btnClass = "hide" : btnClass = "btn",
         <button className={btnClass} key={index} onClick={() => handleClick(btn)}>
           {btn}
         </button>
