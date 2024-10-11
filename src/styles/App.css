@@ -21,9 +21,24 @@
 
 @media (min-height: 500px) {
   .calculator {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
+
+@media (max-width: 500px) {
+  .calculator {
+    top: 55%;
+  }
+}
+
+/* For tablets */
+@media (min-height: 1000px) and (min-width: 768px) {
+  .calculator {
+    max-width: 900px;
+  }
+}
+

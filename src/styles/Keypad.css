@@ -1,39 +1,45 @@
 .keypad {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 10px;
 }
 
 .keypad .btn {
-    height: 12vh;
-    min-height: 1cm;
-    max-height: 2cm;
-    min-width: 1cm;
-    border: 1px solid #555;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-    background-color: #222;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 0.5cm;
+	height: 12vh;
+	min-height: 1cm;
+	max-height: 2cm;
+	min-width: 1cm;
+	border: 1px solid #555;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	background-color: #222;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 0.5cm;
 }
 
 .keypad .btn:hover {
-    background-color: #f07706;
+	background-color: #f07706;
 }
 
 .keypad .btn:active {
-    background-color: #ac5403;
+	background-color: #ac5403;
 }
 
 .keypad .hide {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 @media (min-height: 900px) {
-    .keypad .btn {
-        font-size: 1cm;
-    }
+	.keypad .btn {
+		font-size: 1cm;
+	}
+}
+
+@media (min-height: 1000px) and (min-width: 768px) {
+	.keypad .btn {
+	  min-height: 150px;
+	}
 }
